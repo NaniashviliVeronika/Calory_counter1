@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="preload" href="fonts/pt-sans-caption-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt-sans-caption-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+	<div class="text">
+		   <h1>Счётчик калорий</h1>
+		</div>
+	</header>
+	<div class="form-main" > 
+       <h2 class="head">
+       	Пол
+       </h2>
+       <div class="gender_1">
+           <label class=gender>
+             <input type="radio" id="first" name="gender" value="male" checked required> 
+             	<h4>Мужчина</h4>
+           </label>
+           <label class="gender">
+             <input type="radio" id="second" name="gender" value="female"required> 
+             	<h4>Женщина</h4>
+           </label>
+       </div>
+        <div class="parametrs">
+           <div class="age">
+           	<h2>Возраст</h2>
+           	<h4>лет</h4>
+           </div>
+           <div class="height">
+           	<h2>Рост</h2>
+           	<h4>см</h4>
+           </div>
+           <div class="weight">
+           	<h2>Вес</h2>
+           	<h4>кг</h4>
+           </div>
+       </div>
+       <div class="values">
+       	<div class="a_1">
+         <input type="text" id="age" name="age" placeholder="0" inputmode="decimal" maxlength="3" required>
+        </div>
+       </div>
+       <div class="values">
+       	<div class="h_1">
+         <input type="text" id="height" name="height" placeholder="0" inputmode="decimal" maxlength="3" required>
+        </div>
+       </div>
+       <div class="values">
+       	<div class="w_1">
+         <input type="text" id="weight" name="weight" placeholder="0" inputmode="decimal" maxlength="3" required>
+        </div>
+       </div>
+       <div class="physical_activity">
+        <h2>Физическая активность</h2>
+           <label class=button>
+             <input type="radio" name="activity" class="activity" value="mi" checked required> 
+             	<h3 class="work">Минимальная</h3>
+             	<h4 class="work_1">Сидячая работа и нет физических нагрузок</h4>
+           </label>
+           <label class="button">
+             <input type="radio" name="activity" class="activity" value="s"required> 
+             	<h3 class=work>Низкая</h3>
+             	<h4 class="work_1">Редкие, нерегулярные тренировки, активность в быту</h4>
+           </label>
+           <label class="button">
+             <input type="radio" name="activity" class="activity" value="me"required> 
+             	<h3 class="work">Средняя</h3>
+             	<h4 class="work_1">Тренировки 3-5 раз в неделю</h4>
+           </label>
+           <label class="button">
+             <input type="radio" name="activity" class="activity" value="h"required> 
+             	<h3 class="work">Высокая</h3>
+             	<h4 class="work_1">Тренировки 6-7 раз в неделю</h4>
+           </label>
+           <label class="button">
+             <input type="radio" name="activity" class="activity" value="vh"required> 
+             	<h3 class="work">Очень высокая</h3>
+             	<h4 class="work_1">Больше 6 тренировок в неделю и физическая работа</h4>
+           </label>
+       </div> 
+       <div class="calculate_1">
+             <button type="submit" class="calculate_2">Рассчитать</button>
+             <button type="sunmit" class="calculate_3">✖ Очистить поля и рассчет</button>
+       </div>
+      </div>
+	</div>
+   <footer class="footer hidden_container">
+      <div class="container">
+        <div class="content_container">
+          <h2 class="title">Ваша норма калорий</h2>
+          <div class="answer">
+            <div>
+              <p class="calories1">0 ккал</p>
+              <p class="description">поддержание веса</p>
+            </div>
+            <div>
+              <p class="calories2">0 ккал</p>
+              <p class="description">снижение веса</p>
+            </div>
+            <div>
+              <p class="calories3">0 ккал</p>
+              <p class="description">набор веса</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
